@@ -58,7 +58,7 @@ class Api extends ResourceController
     }
 
     // update product
-    public function update($token = null)
+    public function update($id = null)
     {
         $model = new SystemModel();
 		$json = $this->request->getJSON();
@@ -81,7 +81,7 @@ class Api extends ResourceController
 		// }
         // var_dump($input);die;
 		// Insert to Database
-        $model->update($token, $input);
+        $model->update($id, $input);
         $response = [
             'status'   => 200,
             'error'    => null,
