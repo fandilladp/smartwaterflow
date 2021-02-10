@@ -8,10 +8,7 @@ class SystemModel extends Model
     protected $primaryKey = 'id';
 
     protected $allowedFields = [
-        'token', 'discharge', 'temperature', 'humidity', 'servo_low', 'servo_medium', 'servo_high', 'created_date', 'updated_date'
+        'token', 'debitair','servo_low', 'servo_normal', 'servo_labor', 'created_date', 'updated_date'
     ];
-
-    protected $returnType      = 'App\Entities\System';
-    protected $usingTimestamps = false;
 
 }
